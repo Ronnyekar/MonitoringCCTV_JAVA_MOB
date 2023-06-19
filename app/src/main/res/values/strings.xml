@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">TestDashboard</string>
+    <string name="title_activity_data">DataActivity</string>
+
+    <string-array name="spinner_lokasi">
+        <item>Nilam</item>
+        <item>Mirah</item>
+        <item>Jamrud</item>
+        <item>GSN</item>
+        <item>Kantor Cabang</item>
+        <item>Kantor Pusat</item>
+        <item>Kalimas</item>
+    </string-array>
+
+    <string-array name="spinner_sort_by">
+        <item>Nomor</item>
+        <item>Lokasi</item>
+        <item>Status</item>
+    </string-array>
+</resources>

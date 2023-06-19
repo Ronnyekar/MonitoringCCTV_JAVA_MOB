@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_edit_data"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="EditDataActivity">
+
+    <TextView
+        android:id="@+id/tvnama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Nama" />
+
+    <EditText
+        android:id="@+id/etnama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvnama"
+        android:layout_below="@+id/tvnama"
+        android:inputType="text"
+        android:maxLength="20"/>
+
+    <TextView
+        android:id="@+id/tvip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etnama"
+        android:layout_below="@+id/etnama"
+        android:layout_marginTop="10dp"
+        android:text="IP" />
+
+    <EditText
+        android:id="@+id/etip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvip"
+        android:layout_below="@+id/tvip"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/textviewlokasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etip"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"
+        android:text="LOKASI CCTV"/>
+
+    <TextView
+        android:id="@+id/tvlat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textviewlokasi"
+        android:layout_marginTop="10dp"
+        android:text="Latitude"/>
+
+    <EditText
+        android:id="@+id/etlat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvlat"
+        android:layout_below="@+id/tvlat"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/tvlong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etlat"
+        android:layout_below="@+id/etlat"
+        android:layout_marginTop="10dp"
+        android:text="Longitude"/>
+
+    <EditText
+        android:id="@+id/etlong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvlong"
+        android:layout_below="@+id/tvlong"
+        android:inputType="text"/>
+
+    <TextView
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/textlokasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lokasi :"
+        android:layout_below="@+id/etlong"
+        android:layout_marginTop="20dp"/>
+
+    <Spinner
+        android:layout_centerInParent="true"
+        android:id="@+id/spinnerlokasi"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_alignBaseline="@id/textlokasi"
+        android:entries="@array/spinner_lokasi"
+        android:layout_marginTop="17dp"/>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_marginBottom="150dp"
+        android:text="Simpan" />
+
+    <ImageView
+        android:id="@+id/btncancel"
+        android:src="@drawable/cancelicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        />
+
+<!--    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etip">
+
+        <TextView
+            android:id="@+id/tvlokasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etnama"
+            android:layout_marginTop="30dp"
+            android:text="LOKASI" />
+
+        <RadioButton
+            android:id="@+id/rbnilam"
+            android:text="NILAM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvlokasi"
+            android:layout_marginTop="10dp"
+            android:onClick="RadioButtonClicked" />
+
+        <RadioButton
+            android:id="@+id/rbmirah"
+            android:text="MIRAH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rbnilam"
+            android:layout_marginTop="10dp"
+            android:onClick="RadioButtonClicked"/>
+
+        <RadioButton
+            android:id="@+id/rbjamrud"
+            android:text="JAMRUD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rbmirah"
+            android:layout_marginTop="10dp"
+            android:onClick="RadioButtonClicked"/>
+
+        <RadioButton
+            android:id="@+id/rbgsn"
+            android:text="GSN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rbjamrud"
+            android:layout_marginTop="10dp"
+            android:onClick="RadioButtonClicked"/>
+
+        <RadioButton
+            android:id="@+id/rbcabang"
+            android:text="KANTOR CABANG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rbgsn"
+            android:layout_marginTop="10dp"
+            android:onClick="RadioButtonClicked"/>
+
+        <RadioButton
+            android:id="@+id/rbpusat"
+            android:text="KANTOR PUSAT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rbcabang"
+            android:layout_marginTop="10dp"
+            android:onClick="RadioButtonClicked"/>
+
+        <RadioButton
+            android:id="@+id/rbkalimas"
+            android:text="KALIMAS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rbpusat"
+            android:layout_marginTop="10dp"
+            android:onClick="RadioButtonClicked"/>
+    </RadioGroup>
+-->
+</RelativeLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_lihat_data"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="LihatDataActivity">
+
+    <TextView
+        android:id="@+id/tvnilainomor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="104dp"
+        android:layout_marginTop="20dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tvnilainama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/tvnilainomor"
+        android:layout_below="@+id/tvnilainomor"
+        android:layout_marginTop="20dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tvnilaiip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvnilainama"
+        android:layout_below="@+id/tvnilainama"
+        android:layout_marginTop="20dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tvnilailokasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvnilaiip"
+        android:layout_below="@+id/tvnilaiip"
+        android:layout_marginTop="20dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tvnilaistatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvnilailokasi"
+        android:layout_below="@+id/tvnilailokasi"
+        android:layout_marginTop="20dp"
+        android:text="-" />
+
+    <TextView
+        android:id="@+id/tvnilailatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvnilailokasi"
+        android:layout_below="@+id/tvnilaistatus"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:text="-" />
+
+    <TextView
+        android:id="@+id/tvnilailongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvnilailokasi"
+        android:layout_below="@+id/tvnilailatitude"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:text="-" />
+
+    <TextView
+        android:id="@+id/tvnomor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvnilainama"
+        android:layout_alignParentLeft="true"
+        android:text="Nomor" />
+
+    <TextView
+        android:id="@+id/tvnama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvnilainama"
+        android:layout_alignBottom="@+id/tvnilainama"
+        android:layout_alignLeft="@+id/tvnomor"
+        android:text="Nama" />
+
+    <TextView
+        android:id="@+id/tvip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvnilaiip"
+        android:layout_alignBottom="@+id/tvnilaiip"
+        android:layout_alignLeft="@+id/tvnama"
+        android:text="IP" />
+
+    <TextView
+        android:id="@+id/tvlokasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvnilailokasi"
+        android:layout_alignBottom="@+id/tvnilailokasi"
+        android:layout_alignLeft="@+id/tvnama"
+        android:text="Lokasi" />
+
+    <TextView
+        android:id="@+id/tvstatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvnilaistatus"
+        android:layout_alignBottom="@+id/tvnilaistatus"
+        android:layout_alignLeft="@+id/tvnama"
+        android:text="Status" />
+
+    <TextView
+        android:id="@+id/tvkoordinat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvstatus"
+        android:layout_alignLeft="@+id/tvnama"
+        android:layout_marginTop="20dp"
+        android:text="LOKASI CCTV"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvslatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvnilailatitude"
+        android:layout_alignBottom="@+id/tvnilaistatus"
+        android:layout_alignLeft="@+id/tvnama"
+        android:text="Latitude" />
+
+    <TextView
+        android:id="@+id/tvlongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvnilailongitude"
+        android:layout_alignBottom="@+id/tvnilaistatus"
+        android:layout_alignLeft="@+id/tvnama"
+        android:text="Longitude" />
+
+    <ImageView
+        android:id="@+id/btnback"
+        android:src="@drawable/backicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/location"
+        android:id="@+id/btnaddlocation"
+        android:layout_below="@+id/buttonping"
+        android:layout_centerInParent="true"
+        />
+
+    <Button
+        android:id="@+id/buttonping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Ping"
+        style="?android:attr/borderlessButtonStyle"/>
+
+</RelativeLayout>

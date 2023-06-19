@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="toolbar" type="id" />
+    <item name="tvnilainomor" type="id" />
+    <item name="tvnilainama" type="id" />
+    <item name="tvnilaiip" type="id" />
+    <item name="tvnilailokasi" type="id" />
+    <item name="tvnomor" type="id" />
+    <item name="tvnilaistatus" type="id" />
+    <item name="action_settings" type="id" />
+</resources>

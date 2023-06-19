@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="SettingActivity">
+
+    <TextView
+        android:id="@+id/textnotif"
+        android:text="Notifikasi"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="170dp"
+        android:layout_marginLeft="25dp"/>
+
+    <Switch
+        android:id="@+id/switchnotif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="170dp"
+        android:layout_marginRight="25dp"/>
+
+    <TextView
+        android:id="@+id/textsetwaktu"
+        android:text="Set Waktu Ping Otomatis"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="25dp"
+        android:layout_below="@+id/textnotif"/>
+
+    <EditText
+        android:id="@+id/edittextsetwaktu"
+        android:inputType="number"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/switchnotif"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="25dp"/>
+
+
+    <Button
+        android:id="@+id/simpansetting"
+        android:text="Simpan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:id="@+id/cancelsetting"
+        android:src="@drawable/cancelicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/simpansetting"/>
+    <Button
+        android:id="@+id/btnlogout"
+        android:text="LOGOUT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:onClick="logoutclicked"/>
+    <LinearLayout
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="560dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="40dp">
+        <LinearLayout
+            android:background="@drawable/color_cursor_white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Note :Satuan Interval Waktu Otomatis adalah MENIT"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
